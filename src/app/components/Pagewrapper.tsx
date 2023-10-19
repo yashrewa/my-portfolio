@@ -8,7 +8,7 @@ const Pagewrapper = ({ children }: any) => {
     return (
         <>
             <AnimatePresence>
-                <motion.div
+                <motion.div className='pt-28 lg:pt-0'
                     initial={ path==='/'?{opacity:0, y: -window.innerHeight }: {opacity:0, y: window.innerHeight }}
                     animate={{opacity:1, y: 0 }}
                     exit={ path==='/'?{ opacity:0, y: -window.innerHeight }: {opacity:0, y: window.innerHeight }}

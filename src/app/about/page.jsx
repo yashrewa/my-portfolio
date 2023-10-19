@@ -61,9 +61,9 @@ export default function About() {
   return (
     <>
       <Pagewrapper>
-      <motion.div variants={variants} initial="hidden" animate="show" className={`h-full pl-6 pr-3 pt-28 md:pt-32 justify-center text-white-50 font-poppins`}>
+      <motion.div variants={variants} initial="hidden" animate="show" className={`h-full pl-6 pr-3 md:pt-32 justify-center text-white-50 font-poppins`}>
             <motion.h1 variants={top} className="text-3xl md:pl-56 md:text-8xl"><span className="text-primary-purple">M</span>e &#38; <span className="text-primary-purple">M</span>yself</motion.h1>
-            <motion.div variants={right} className="h-5/6 overflow-y-auto md:w-11/12 inline-block pb-">
+            <motion.div variants={right} className="h-5/6 overflow-y-auto md:w-11/12 inline-block">
                 <p className="text-sm pt-2 md:pl-56 md:w-11/12 md:pt-4">Hi, I am a <span className="text-primary-purple">Full Stack Web Developer</span>. I have been working on the MERN stack for about 6 months in this span I have developed multiple projects which helped me to enhance my skills. Yes, having your strong base really helps and hence I am open to adapting to whichever framework is required. While I was working on different tech stacks, to give a kick start to my career</p>
 
                 <p className="text-sm pt-2 md:pl-56 md:w-11/12 md:pt-4"> After all this, I joined <span className="text-primary-purple">Namaste React</span> & <span className="text-primary-purple">COHORT MERN Stack</span> Bootcamp for <span className="text-aqua-600">web developers</span>, there I learned about <span className="text-aqua-600">React ecosystem</span>, <span className="text-aqua-600">UI/UX</span>, <span className="text-aqua-600">web performances</span>, and <span className="text-aqua-600">tooling</span> which helped me to grow overall, and equipped me with some of the latest technologies.</p>

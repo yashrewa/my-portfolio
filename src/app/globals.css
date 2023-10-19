@@ -60,6 +60,7 @@ body {
       width: 100% !important;
       height: 5rem;
       column-gap: 5rem;
+      z-index: 20;
       border-bottom: 1px solid rgba(72, 202, 228, 0.2);
   }
 
