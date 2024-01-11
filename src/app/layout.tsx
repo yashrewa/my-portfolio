@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 import { NextUIProvider } from '@nextui-org/react'
 import * as logo from '../../public/logo-new.svg'
 import Head from 'next/head'
-// export const metadata: Metadata = {
-//   title: 'YashPort',
-// }
+export const metadata: Metadata = {
+  title: 'Yash Portfolio',
+}
 
 export default function RootLayout({
   children,
@@ -18,10 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Yash POrt</title>
-        <link rel='icon' href='/favicon.ico'></link>
-      </head>
       <body className={`${inter.className} min-h-full no-scrollbar bg-black`}>
 
         <Providers>
