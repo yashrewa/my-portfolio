@@ -5,11 +5,11 @@ import { Providers } from './components/Provider'
 import Appbar from './components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 import { NextUIProvider } from '@nextui-org/react'
-
-export const metadata: Metadata = {
-  title: 'Yash',
-  description: 'Portfolio',
-}
+import * as logo from '../../public/logo-new.svg'
+import Head from 'next/head'
+// export const metadata: Metadata = {
+//   title: 'YashPort',
+// }
 
 export default function RootLayout({
   children,
@@ -18,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-full bg-black`}>
+      <head>
+        <title>Yash POrt</title>
+        <link rel='icon' href='/favicon.ico'></link>
+      </head>
+      <body className={`${inter.className} min-h-full no-scrollbar bg-black`}>
+
         <Providers>
           <Appbar />
           {children}
