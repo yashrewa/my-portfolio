@@ -1,15 +1,14 @@
 {
-    "projects": [
-        {
+    "projects": [{
 
-            "id":"2321-pj-1",
+            "id": "2321-pj-1",
             "name": "Uber-Eats",
             "description": "A full stack Food Ordering application to give tribute to famous food ordering app which left us some years ago.",
             "imgUrl": "https://pics.paypal.com/00/c/gifts/us/uber_eats.jpg",
             "github": "https://github.com/yashrewa/Swiggy-Main",
             "live": "https://uber-eat.vercel.app/",
             "stack": [
-            	"Typescript",
+                "Typescript",
                 "ReactJs",
                 "ExpressJs",
                 "MongoDB",
@@ -19,17 +18,17 @@
             ]
         },
         {
-            "id":"2321-pj-2",
+            "id": "2321-pj-2",
             "name": "Jordan-Store",
             "description": "A full stack E-commerce application created for the love for Nike-Jordans",
             "imgUrl": "https://media.istockphoto.com/id/1401943729/photo/large-air-jordan-flagship-retail-store.jpg?s=612x612&w=0&k=20&c=3x3Si4arN6_zdfTF4TKzbqwPet3bdN2iN3QMT5d7Llw=",
             "github": "https://github.com/yashrewa/Jordan-Store-AppRouting",
-            "live": "https://knight-share.netlify.app",
+            "live": "https://jordan-store-approute.vercel.app/",
             "stack": [
                 "ReactJs",
-                "Redux",
+                "NextJs",
                 "Express",
-                "GraphQl",
+                "RecoilStateManagement",
                 "Hasura",
                 "PostgreSql"
             ]
