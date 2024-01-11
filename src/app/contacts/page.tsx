@@ -1,12 +1,12 @@
 'use client'
-import React, { ReactEventHandler, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 // import Arrow from '../../Images/Arrow.svg'
 import Image from 'next/image'
 import emailjs from 'emailjs-com';
-import {AiOutlineUp} from 'react-icons/ai'
+import { AiOutlineUp } from 'react-icons/ai'
 import Link from 'next/link';
 
-export default function contacts() {
+function Contacts() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [name, setName] = useState('')
@@ -17,8 +17,9 @@ export default function contacts() {
     async function onSubmitHandler(e: React.FormEvent<HTMLFormElement>) {
         try {
             e.preventDefault();
+            const formElement = e.target as HTMLFormElement
             setLoading('Sending...')
-            await emailjs.sendForm(process.env.SERVICE_ID!, process.env.TEMPLATE_ID!, e.target, 'zsiK0xqbTMvXz4UCQ')
+            await emailjs.sendForm(process.env.SERVICE_ID!, process.env.TEMPLATE_ID!, formElement, 'zsiK0xqbTMvXz4UCQ')
             setEmail("")
             setMessage("")
             setName("")
@@ -69,7 +70,10 @@ export default function contacts() {
                 <button className="bg-gray-950 z-10 md:ml-56  text-primary-purple btn-emboss-plus w-36 p-2 " type='submit'>{loading}</button>
             </form>
 
-            <button type="submit" className={`z-10 animate-bounce w-16 h-16 btn-emboss absolute bottom-4 right-0 left-0 m-auto bg-gray-950 rounded-full p-3 flex items-center justify-center `}><Link href='/'><AiOutlineUp className='text-4xl text-primary-purple'/></Link></button>
+            <button type="submit" className={`z-10 animate-bounce w-16 h-16 btn-emboss absolute bottom-4 right-0 left-0 m-auto bg-gray-950 rounded-full p-3 flex items-center justify-center `}><Link href='/'><AiOutlineUp className='text-4xl text-primary-purple' /></Link></button>
         </div>
     )
 }
+
+
+export default Contacts
