@@ -17,7 +17,7 @@ const config: Config = {
             },
             colors: {
                 "backgroundColor": "var(--background-start-rgb)",
-                "primary-purple": '#A32CC4'
+                "primary-purple": '#5CF64A'
             }
         }
     },

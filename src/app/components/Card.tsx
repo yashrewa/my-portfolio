@@ -23,10 +23,25 @@ const variants = {
     show: {
         opacity: 1,
         transition: {
-            staggerChildren: .3,
+            staggerChildren: 3,
         }
     }
 }
+
+const top = {
+    hidden: {
+        y: -100,
+        opacity: 0,
+    },
+    show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+        }
+    }
+}
+
 const right = {
     hidden: {
         x: 100,
@@ -36,13 +51,28 @@ const right = {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 1,
+            duration: 0.3,
+            delay: 0.5
+        }
+    }
+}
+const bottom = {
+    hidden: {
+        y: 700,
+        opacity: 1,
+    },
+    show: {
+        y: 0,
+        opacity: 1,
+        delay: 1,
+        transition: {
+            duration: 0.3,
         }
     }
 }
 export const Card = ({ img, heading, github, live, details }: Props) => {
     return (
-        <motion.div variants={right} initial='hidden' animate='show' className="index-high md:inline-block md:mr-10 bg-gray-950 md:hover:shadow-lg md:hover:scale-110 transition-all ease-in-out md:hover:shadow-primary-purple h-60 w-40 md:w-64 md:h-80 flex flex-col items-center overflow-hidden rounded">
+        <motion.div variants={right} initial='hidden' animate='show' className="index-high md:inline-block md:mr-10 bg-gray-950 md:hover:shadow-lg md:hover:scale-110 transition-all ease-in-out shadow-sm shadow-primary-purple md:hover:shadow-primary-purple h-60 w-40 md:w-64 md:h-80 flex flex-col items-center overflow-hidden rounded">
             <div className="relative overflow-hidden">
                 <span className="filter brightness-50"><Image src={img} className="card-image" height={200} width={260} alt="" /></span>
                 <div className="flex items-center justify-end absolute bottom-2 right-0 gap-x-1 pr-2">
