@@ -93,14 +93,14 @@ const words = [
 
 const firstLine = [
     {
-        text: "JavaScript"
+        text: "TypeScript"
     },
     {
         text: "/"
     },
 
     {
-        text: "TypeScript"
+        text: "JavaScript"
     },
     {
         text: "/"
@@ -119,13 +119,14 @@ const firstLine = [
     },
 
     {
-        text: "Prisma"
+        text: "Tailwind"
     },
     {
         text: "/"
     },
     {
-        text: "Tailwind"
+        text: "A lot more",
+        className: "text-primary-purple dark:text-primary-green"
     },
 
 
@@ -141,7 +142,7 @@ export const MainPage = () => {
                 <motion.div variants={fadeIn} className="z-30 index-low md:index-high tracking-widest pt-2"><span className="text-aqua-600" ></span>Hi</motion.div>
                 <motion.div variants={fadeIn} className="z-30 index-low md:index-high tracking-widest pt-2">I&apos;m <span className="text-primary-purple">Yash</span></motion.div>
                 <motion.div variants={fadeIn} className="z-30 index-low md:index-high tracking-widest text-3xl md:text-7xl pt-2"><span className="text-primary-purple">W</span>eb <span className="text-primary-purple">D</span>eveloper</motion.div>
-                <div className="z-30 index-low md:index-high font-medium text-sm md:text-xl  text-gray-850 pt-2"><TypewriterEffectSmooth words={firstLine} className={`text-sm md:text-xl`} /> </div>
+                <div className="z-30 index-low md:index-high font-medium text-sm md:text-xl max-w-screen-sm text-gray-850 pt-2"><TypewriterEffectSmooth words={firstLine} className='' cursorClassName='xl:h-6'/> </div>
                 <motion.button variants={fadeIn} className={`animate-bounce w-16 h-16 z-50 absolute right-0 bottom-4 left-0 m-auto bg-gray-950 rounded-full p-3 flex items-center justify-center`}><Link href='/about'><AiOutlineDown className='text-4xl text-primary-purple' /></Link></motion.button>
             </motion.div>
 
