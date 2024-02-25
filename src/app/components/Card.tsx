@@ -77,7 +77,7 @@ export const Card = ({ img, heading, github, live, details }: Props) => {
                 <span className="filter brightness-50"><Image src={img} className="card-image" height={200} width={260} alt="" /></span>
                 <div className="flex items-center justify-end absolute bottom-2 right-0 gap-x-1 pr-2">
                     {github && <a target="_blank" rel="noreferrer" href={github}><span className="cursor-pointer text-3xl"><AiFillGithub className='text-xl' /></span></a >}
-                    {live && <a target="_blank" rel="noreferrer" href={live}><span className="cursor-pointer text-2xl"><AiOutlineLink classname='text-8xl fill-primary-purple' /></span></a>}
+                    {live && <a target="_blank" rel="noreferrer" href={live}><span className="cursor-pointer text-2xl"><AiOutlineLink className='text-8xl fill-primary-purple' /></span></a>}
                 </div>
             </div>
             <h4 className="text-aqua-600 font-semiBold pt-2 md:text-center md:mb-1">{heading}</h4>

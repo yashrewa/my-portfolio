@@ -64,8 +64,8 @@ export default function Skills() {
 
 
     return (
-        <motion.div variants={variants} initial='hidden' animate='show' className={`md:z-10 pt-24 z-10 pl-6 pr-3 pt-18 md:pt-10 justify-center text-white-50 font-poppins`}>
-            <motion.h1 variants={bottom} className="text-3xl  md:pl-56 md:text-8xl"><span className="text-primary-purple">S</span>kills</motion.h1>
+        <motion.div variants={variants} initial='hidden' animate='show' className={`md:z-10 pt-24 z-10 pl-6 pr-3 pt-18 md:pt-48 justify-center  text-white-50 font-poppins`}>
+            <motion.h1 variants={bottom} className="text-3xl md:pl-56 md:text-8xl"><span className="text-primary-purple">S</span>kills</motion.h1>
             <motion.div variants={variants} initial='hidden' animate='show' className="md:pl-56 flex md:flex-wrap h-unit-8xl md:h-unit-7xl md:gap-y-2 lg:h-4/5 md:gap-x-4 no-scrollbar  md:w-full md:pr-0 md:overflow-hidden overflow-hidden md:flex-row md:pt-4 flex-col overflow-y-scroll scrollbar-thumb-primary-purple gap-y-3 pb-2 pr-1">
                 <motion.div variants={right} className="btn-emboss-plus rounded index-low md:index-high bg-gray-950 md:w-96 shadow-sm shadow-primary-purple h-44 pt-2 pb-2 pl-2 pr-2 md:pb-0 md:pt-0 md:h-32 flex items-center gap-x-5 ">
                     <Image alt='html-css=js' src='/Skills/html-css-js.svg' className='w-1/3' width={50} height={50} />

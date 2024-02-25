@@ -49,7 +49,7 @@ function Contacts() {
 
 
     return (
-        <div className={`md:z-10 h-full pl-6 pr-3 pt-20 md:pt-8 justify-center text-white-50 font-poppins`}>
+        <div className={`md:z-10 h-full pl-6 pr-3 pt-20 md:pt-8 justify-center  text-white-50 font-poppins`}>
             <h1 className="text-3xl md:pl-56 md:text-8xl"><span className="text-primary-purple">L</span>et&apos;s <span className="text-primary-purple">C</span>onnect</h1>
             <p className="text-sm pt-2 md:pl-56 md:w-4/5 md:pt-4">I&apos;d love to hear about what you&apos;re working on and how I could help. I&apos;m currently looking for a new role and open to opportunities in the domain of web development. I&apos;m also open to discussing ideas and doing a project together.
             </p>

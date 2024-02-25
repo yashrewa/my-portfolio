@@ -60,7 +60,7 @@ const AppBar = () => {
 
             {/* Mobile Header */}
             <div className="w-46 pt-8 top-0 flex md:hidden cursor-pointer justify-between mx-8 right-0">
-                <span><Link href='/'><Image src={yash} className='mix-blend-screen index-low absolute left-4 top-2' alt='logo' width={60} height={60} ></Image></Link></span>
+                <span><Link href='/'><Image src={yash} className='mix-blend-screen index-high absolute left-4 top-2' alt='logo' width={60} height={60} ></Image></Link></span>
                 <span className="logo relative index-high" onClick={() => toggleNavbar()}><CiMenuKebab className='text-2xl' /></span>
             </div>
 
