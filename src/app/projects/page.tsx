@@ -114,9 +114,9 @@ const bottom = {
 export default function Projects() {
     // const [isHidden, setIsHidden] = useState('hidden')
     return (
-        <motion.div variants={variants} initial='hidden' animate='show' className={` index-low md:index-high h-unit-8xl pl-6 pr-3 md:h-full pt-28 md:pt-48 justify-center text-white-50 font-poppins`}>
+        <motion.div variants={variants} initial='hidden' animate='show' className={` index-low md:index-high h-unit-8xl pl-6 pr-3 md:h-screen pt-28 md:pt-48 justify-center text-white-50 font-poppins`}>
             <motion.h1 variants={bottom} className="text-3xl md:pl-56 md:text-8xl"><span className="text-primary-purple">M</span>y Work</motion.h1>
-            <motion.div variants={variants} initial='hidden' animate='show' className="flex w-full index-low md:index-high mt-2 justify-around h-unit-8xl overflow-y-scroll flex-wrap md:block md:flex-nowrap pt-10 gap-y-3 md:pl-64 md:pt-6   md:h-4/5 absolute right-0 left-0 m-auto pb-10 md:pb-24">
+            <motion.div variants={variants} initial='hidden' animate='show' className="flex lg:flex-row w-full index-low md:index-high mt-2 gap-x-unit justify-around h-unit-8xl overflow-y-scroll flex-wrap md:block md:flex-nowrap pt-10 gap-y-3 md:pl-64 md:pt-6  md:h-auto absolute right-0 left-0 m-auto pb-10 md:pb-24">
                 {projects.projects.map(({ name, description, imgUrl, github, live, id }) => {
                     return <Card img={imgUrl} heading={name} github={github} live={live} details={description} key={id} />
                 })}
