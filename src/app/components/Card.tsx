@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 // import Open from '../../Images/Open.svg'
 // import {BsGithub} from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
-import { PinContainer } from './ui/3d-pin'
 interface Props {
     img: string,
     heading: string,
